@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/phone.css" />
+
+  <!-- спочатку бібліотеки -->
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/imask" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/just-validate@4.3.0/dist/just-validate.production.min.js" defer></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+
+<!-- потім ваш код -->
+<script src="js/imask.js" defer></script>
+<script src="js/main.js" defer></script>
+    <title>gold hook power</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="background__images"></div>
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <a href="#" class="logo">
+              <img src="./images/logo.png" data-aos="fade-up" alt="logo" />
+            </a>
+
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__link__item">
+                  <a class="nav__link" data-aos="fade-up" href="#">головна</a>
+                </li>
+                <li class="nav__link__item">
+                  <a class="nav__link" data-aos="fade-up" href="#about__me">про себе</a>
+                </li>
+                <li class="nav__link__item">
+                  <a class="nav__link" data-aos="fade-up" href="#experience">етапи розропки</a>
+                </li>
+                <li class="nav__link__item">
+                  <a class="nav__link" data-aos="fade-up" href="#services">послуги</a>
+                </li>
+                <li class="nav__link__item">
+                  <a class="nav__link" data-aos="fade-up" href="#projects">проєкти</a>
+                </li>
+
+                <li class="nav__link__item">
+                  <a class="nav__link" data-aos="fade-up" href="#contacts__us">заповнити заявку</a>
+                </li>
+              </ul>
+            </nav>
+
+            <button
+              class="burger"
+              aria-label="Відкрити меню"
+              aria-expanded="false"
+            >
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+            </button>
+          </div>
+        </div>
+
+        <div class="nav-overlay"></div>
+      </header>
+      <main class="main">
+        <section class="hero">
+          <div class="container">
+            <h1 class="hero__title" data-aos="fade-down">100% якості, 0% зайвого</h1>
+          </div>
+        </section>
+        <section class="about__me" id="about__me" data-aos="fade-down">
+          <div class="container">
+            <h2 class="about__title">Про себе</h2>
+            <div class="about__inner">
+  <div class="splide about__slider" role="group" aria-label="Мої фото">
+    <div class="splide__arrows">
+  <button class="splide__arrow splide__arrow--prev about__arrow" aria-label="Попередній слайд">
+    <svg class="about__arrow__icon">
+      <use href="images/icons/sprite.svg#icon-arrow"></use>
+    </svg>
+  </button>
+  <button class="splide__arrow splide__arrow--next about__arrow" aria-label="Наступний слайд">
+    <svg class="about__arrow__icon">
+      <use href="images/icons/sprite.svg#icon-arrow"></use>
+    </svg>
+  </button>
+</div>
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide">
+          <img
+            class="about__me__image"
+            src="./images/my-photo.jpg"
+            alt="my photo"
+          />
+          <div class="about__me__text__box">
+    <p class="about__me__text">
+      Привіт, мене звати В'ячеслав Я - веб-розробник, який
+      перетворює ваші ідеї на робочі сайти. Створюю лендінги,
+      інтернет-магазини та веб-застосунки, які не просто гарно
+      виглядають, а й реально працюють на результат: залучають
+      клієнтів, продають і зручні у використанні.
+    </p>
+    <p class="about__me__text">
+      Працюю на сучасних технологіях, тому мої сайти швидкі,
+      адаптивні під будь-який пристрій і легкі в подальшій
+      підтримці. Кожен проєкт - це діалог з клієнтом: я не просто
+      виконую технічне завдання, а пропоную рішення, які справді
+      допоможуть вашому бізнесу рости.
+    </p>
+  </div>
+        </li>
+        
+        <li class="splide__slide">
+           <img
+            class="about__me__image"
+            src="./images/my-photo.jpg"
+            alt="my photo"
+          />
+          <div class="about__me__text__box">
+    <p class="about__me__text">
+      Привіт, мене звати В'ячеслав Я - веб-розробник, який
+      перетворює ваші ідеї на робочі сайти. Створюю лендінги,
+      інтернет-магазини та веб-застосунки, які не просто гарно
+      виглядають, а й реально працюють на результат: залучають
+      клієнтів, продають і зручні у використанні.
+    </p>
+    <p class="about__me__text" >
+      Працюю на сучасних технологіях, тому мої сайти швидкі,
+      адаптивні під будь-який пристрій і легкі в подальшій
+      підтримці. Кожен проєкт - це діалог з клієнтом: я не просто
+      виконую технічне завдання, а пропоную рішення, які справді
+      допоможуть вашому бізнесу рости.
+    </p>
+  </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  
+</div>
+          </div>
+        </section>
+        <section class="experience" id="experience"  data-aos="fade-up">
+          <div class="container">
+            <h2 class="experience__title">етапи розробки</h2>
+            <div class="experience__inner">
+              <div class="experience__box" data-aos="fade-up">
+                <p class="number"></p>
+                <h3 class="experience__box__subtitle">проектування</h3>
+                <div class="icon__con">
+                  <svg class="icon">
+                    <use
+                      href="images/icons/sprite.svg#icon-face-grinning"
+                    ></use>
+                  </svg>
+                </div>
+                <p class="experience__text">
+                  Перш ніж почати роботу, я детально аналізую ваші потреби та
+                  цілі бізнесу. Продумую структуру сайту, логіку взаємодії з
+                  користувачем і технічні вимоги - щоб на наступних етапах усе
+                  працювало злагоджено, без переробок.
+                </p>
+              </div>
+              <div class="experience__box" data-aos="fade-up">
+                <p class="number"></p>
+                <h3 class="experience__box__subtitle">дизайн</h3>
+                <div class="icon__con">
+                  <svg class="icon">
+                    <use href="images/icons/sprite.svg#icon-palette"></use>
+                  </svg>
+                </div>
+                <p class="experience__text">
+                  Створюю візуальний стиль, який відповідає вашому бренду та
+                  привертає увагу відвідувачів. Дбаю про зручність використання:
+                  кожен елемент розташований логічно, а інтерфейс залишається
+                  інтуїтивно зрозумілим на будь-якому пристрої.
+                </p>
+              </div>
+              <div class="experience__box" data-aos="fade-up">
+                <p class="number"></p>
+                <h3 class="experience__box__subtitle">написання коду</h3>
+                <div class="icon__con">
+                  <svg class="icon">
+                    <use href="images/icons/sprite.svg#icon-code-xml"></use>
+                  </svg>
+                </div>
+                <p class="experience__text">
+                  Перетворюю дизайн на робочий сайт за допомогою сучасних
+                  технологій. Пишу чистий, оптимізований код, який забезпечує
+                  швидке завантаження сторінок і стабільну роботу без збоїв.
+                </p>
+              </div>
+              <div class="experience__box" data-aos="fade-up">
+                <p class="number"></p>
+                <h3 class="experience__box__subtitle">запуск проекту</h3>
+                <div class="icon__con">
+                  <svg class="icon">
+                    <use href="images/icons/sprite.svg#icon-database"></use>
+                  </svg>
+                </div>
+                <p class="experience__text">
+                  Тестую сайт на всіх пристроях і браузерах, усуваю можливі
+                  недоліки та готую проєкт до публікації. Після запуску
+                  залишаюсь на зв'язку, щоб допомогти з подальшою підтримкою чи
+                  доопрацюваннями.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="services" id="services" data-aos="fade-up">
+          <div class="container">
+            <h2 class="services__title" >послуги</h2>
+
+            <div class="services__inner">
+              <div class="tabs" data-aos="fade-up">
+                <div class="tabs__nav" role="tablist">
+                  <button
+                    class="tabs__btn is-active"
+                    role="tab"
+                    aria-selected="true"
+                    aria-controls="tab-panel-1"
+                    id="tab-1"
+                  >
+                    Лендінги
+                  </button>
+
+                  <button
+                    class="tabs__btn"
+                    role="tab"
+                    aria-selected="false"
+                    aria-controls="tab-panel-3"
+                    id="tab-3"
+                    tabindex="-1"
+                  >
+                    веб додаток
+                  </button>
+                  <button
+                    class="tabs__btn"
+                    role="tab"
+                    aria-selected="false"
+                    aria-controls="tab-panel-4"
+                    id="tab-4"
+                    tabindex="-1"
+                  >
+                    Інтернет-магазини
+                  </button>
+                </div>
+
+                <div class="tabs__content">
+                  <div
+                    class="tabs__panel is-active"
+                    role="tabpanel"
+                    id="tab-panel-1"
+                    aria-labelledby="tab-1"
+                  >
+                    <details>
+                      <summary>ціна проекту</summary>
+                      <p>
+                        Мінімальна вартість розробки лендінгу - від 7 000₴.
+                        Точна ціна залежить від кількості секцій у макеті
+                        дизайну.
+                      </p>
+                    </details>
+                    <details>
+                      <summary>Технології проекту</summary>
+                     <p>
+                      11111
+                     </p>
+                  </div>
+                  <div
+                    class="tabs__panel"
+                    role="tabpanel"
+                    id="tab-panel-2"
+                    aria-labelledby="tab-2"
+                    hidden
+                  ></div>
+                  <div
+                    class="tabs__panel"
+                    role="tabpanel"
+                    id="tab-panel-3"
+                    aria-labelledby="tab-3"
+                    hidden
+                  >
+                    <details>
+                      <summary>ціна проекту</summary>
+                      <p>
+                        This used to be something that was impossible, but now
+                        thanks to modern CSS, it's actually pretty easy to do!
+                      </p>
+                    </details>
+                  </div>
+                  <div
+                    class="tabs__panel"
+                    role="tabpanel"
+                    id="tab-panel-4"
+                    aria-labelledby="tab-4"
+                    hidden
+                  >
+                    <details>
+                      <summary>ціна проекту</summary>
+                      <p>
+                        This used to be something that was impossible, but now
+                        thanks to modern CSS, it's actually pretty easy to do!
+                      </p>
+                    </details>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="project" id="projects" data-aos="fade-up">
+          <div class="container">
+            <h2 class="project__title" >
+              проекти
+            </h2>
+            <div class="project__inner">
+              <div class="project__card" data-aos="zoom-in-up">
+                <img src="images/projects/ronin_.avif" alt="project photo">
+                <div class="overlay">
+                  <h3 class="project__card__title">
+                    Ronin fight club
+                  </h3>
+                  <p class="project__card__text">
+                   Створив лендінг для спортивного клубу Ronin fight club з
+                   функцією онлайн запису 
+                  </p>
+                  <a href="#">перейти</a>
+                </div>
+              </div>
+              <div class="project__card" data-aos="zoom-in-up">
+                <img src="images/projects/steam_user_info_.avif" alt="project photo">
+                <div class="overlay">
+                  <h3 class="project__card__title">
+                   steam user info 
+                  </h3>
+                  <p class="project__card__text">
+                   веб додаток для користувачів steam
+                   цей додаток відображає дані про користувачп steam
+                  </p>
+                  <a href="#">перейти</a>
+                </div>
+              </div>
+              <div class="project__card" data-aos="zoom-in-up">
+                <img src="images/projects/catran_.avif" alt="project photo">
+                <div class="overlay">
+                  <h3 class="project__card__title">
+                   catran store 
+                  </h3>
+                  <p class="project__card__text">
+                    онлайн магазин для продажу товарів
+                  </p>
+                  <a href="#">перейти</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="contact__us" data-aos="zoom-in-up" id="contacts__us">
+          <div class="container">
+            <h3 class="contact__us__title">
+              Заповнити заявку на проект
+            </h3>
+           <form class="contact__us__form" id="contact-form">
+             <label for="firstName" class="contact__us__label">ім'я</label>
+             <div id="firstName-errors-container"></div>
+  <input id="firstName" type="text" placeholder="введіть ім'я" />
+
+  <label for="lastName" class="contact__us__label">фамілія</label>
+  <div id="lastName-errors-container"></div>
+  <input id="lastName" type="text" placeholder="введіть фамілію" />
+
+  <label for="middleName" class="contact__us__label">по батькові</label>
+  <div id="middleName-errors-container"></div>
+  <input id="middleName" type="text" placeholder="введіть по батькові" />
+
+  <label class="contact__us__label" id="service-label">тип проекту</label>
+  <div id="service-errors-container"></div>
+  <div
+    class="select"
+    id="serviceSelect"
+    tabindex="0"
+    role="listbox"
+    aria-labelledby="service-label"
+  >
+    <div class="select__trigger">
+      <span class="select__value is-placeholder">оберіть послугу</span>
+      <span class="select__arrow"></span>
+    </div>
+
+    <div class="select__dropdown">
+      <div class="select__option" role="option" data-value="landing">Лендінг</div>
+      <div class="select__option" role="option" data-value="shop">Інтернет-магазин</div>
+      <div class="select__option" role="option" data-value="webapp">Веб-додаток</div>
+      
+    </div>
+  </div>
+  <input type="hidden" name="service" id="serviceInput" />
+
+ 
+
+  <label for="tg_user" class="contact__us__label">ведіть телеграм юзер нейм</label>
+  <div id="tg_user-errors-container"></div>
+  <input id="tg_user" type="text" placeholder="@slench100" />
+
+  <button type="submit" class="contact__us__submit">Надіслати заявку</button>
+</form>
+
+          <div class="contact__us__success" id="successMessage">
+            <svg class="contact__us__success__icon" viewBox="0 0 52 52">
+              <circle cx="26" cy="26" r="25" fill="none" />
+              <path fill="none" d="M14 27l7 7 16-16" />
+            </svg>
+            <h4 class="contact__us__success__title">Заявку надіслано!</h4>
+            <p class="contact__us__success__text">
+              Дякую за звернення. Я зв'яжусь з вами найближчим часом.
+            </p>
+            <button type="button" class="contact__us__success__btn" id="sendAnotherBtn">
+              поверннутися до сайту
+            </button>
+            
+          </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer" data-aos="zoom-in-up">
+        <div class="container">
+          <div class="footer__inner">
+            
+            <h3 class="footer__text">100% якості, 0% зайвого</h3>
+            <p class="footer__subtitle">GOLD HOOK POWER  <span class="currentYear">2026</span></p>
+          </div>
+         
+        </div>
+      </footer>
+    </div>
+    
+  </body>
+</html>

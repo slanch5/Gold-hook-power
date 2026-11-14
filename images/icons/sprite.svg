@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none;">
+
+  <symbol id="icon-database" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="12" cy="5" rx="9" ry="3"/>
+    <path d="M3 5V19A9 3 0 0 0 21 19V5"/>
+    <path d="M3 12A9 3 0 0 0 21 12"/>
+  </symbol>
+
+  <symbol id="icon-palette" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 22a1 1 0 0 1 0-20 10 9 0 0 1 10 9 5 5 0 0 1-5 5h-2.25a1.75 1.75 0 0 0-1.4 2.8l.3.4a1.75 1.75 0 0 1-1.4 2.8z"/>
+    <circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/>
+    <circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/>
+    <circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/>
+    <circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/>
+  </symbol>
+
+  <symbol id="icon-code-xml" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m18 16 4-4-4-4"/>
+    <path d="m6 8-4 4 4 4"/>
+    <path d="m14.5 4-5 16"/>
+  </symbol>
+
+  <symbol id="icon-face-grinning" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M15 10V9"/>
+    <path d="M7.084 14.302a5.12 5.12 0 009.833 0 .24.24 0 00-.235-.302H7.32a.24.24 0 00-.235.302"/>
+    <path d="M9 10V9"/>
+    <circle cx="12" cy="12" r="10"/>
+  </symbol>
+
+  <symbol id="icon-arrow" viewBox="0 0 24 24">
+  <path d="M6 12H18M18 12L13 7M18 12L13 17"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round" />
+</symbol>
+
+</svg>
