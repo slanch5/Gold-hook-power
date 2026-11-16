@@ -2,7 +2,6 @@ const form = document.getElementById("contact-form");
 
 // --- Маска телефону ---
 
-
 // --- Валідація форми ---
 const validator = new window.JustValidate("#contact-form", {
   errorFieldCssClass: "is-invalid",
@@ -40,13 +39,12 @@ validator
     [{ rule: "required", errorMessage: "Оберіть тип проекту" }],
     { errorsContainer: "#service-errors-container" },
   )
-  
+
   .addField(
     "#tg_user",
     [
       { rule: "required", errorMessage: "Введіть юзернейм" },
-       { rule: "minLength", value: 2, errorMessage: "Мінімум 2 символи" },
-     
+      { rule: "minLength", value: 2, errorMessage: "Мінімум 2 символи" },
     ],
     { errorsContainer: "#tg_user-errors-container" },
   )
@@ -58,7 +56,7 @@ validator
       lastName: document.getElementById("lastName").value,
       middleName: document.getElementById("middleName").value,
       service: document.getElementById("serviceInput").value,
-      tgName: document.getElementById('tg_user').value
+      tgName: document.getElementById("tg_user").value,
     };
 
     await sendToTelegram(formData);
@@ -72,20 +70,20 @@ async function sendToTelegram(formData) {
   const serviceLabels = {
     landing: "Лендінг",
     shop: "Інтернет-магазин",
+    multipagewebsite: "multi-pagewebsite",
     webapp: "Веб-додаток",
     other: "Інше",
   };
-  
 
   const text = [
-  "🆕 Нова заявка на проект",
-  "",
-  `👤 Ім'я: ${formData.firstName}`,
-  `👤 Прізвище: ${formData.lastName}`,
-  `👤 По батькові: ${formData.middleName}`,
-  `📁 Тип проекту: ${serviceLabels[formData.service] || formData.service}`,
-  `✈️ Telegram: ${formData.tgName}`,
-].join("\n");
+    "🆕 Нова заявка на проект",
+    "",
+    `👤 Ім'я: ${formData.firstName}`,
+    `👤 Прізвище: ${formData.lastName}`,
+    `👤 По батькові: ${formData.middleName}`,
+    `📁 Тип проекту: ${serviceLabels[formData.service] || formData.service}`,
+    `✈️ Telegram: ${formData.tgName}`,
+  ].join("\n");
 
   submitBtn.disabled = true;
   submitBtn.textContent = "Надсилаємо...";
@@ -151,14 +149,8 @@ function hideSuccessMessage() {
   serviceSelectEl
     .querySelectorAll(".select__option")
     .forEach((o) => o.classList.remove("is-selected"));
-
- 
 }
 
 if (sendAnotherBtn) {
   sendAnotherBtn.addEventListener("click", hideSuccessMessage);
 }
-
-
-
-
