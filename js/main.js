@@ -11,8 +11,6 @@ function toggleMenu(open) {
   burger.classList.toggle("is-active", open);
   nav.classList.toggle("is-open", open);
   overlay.classList.toggle("is-visible", open);
-  burger.setAttribute("aria-expanded", open);
-  document.body.style.overflow = open ? "hidden" : "";
 }
 
 burger.addEventListener("click", () => {
@@ -150,22 +148,6 @@ if (serviceSelect) {
     if (!serviceSelect.contains(e.target)) closeDropdown();
   });
 }
-
-document.addEventListener("DOMContentLoaded", function () {
-  new Splide(".about__slider", {
-    type: "loop",
-    autoplay: true,
-    interval: 4000,
-    arrows: true,
-    pagination: false,
-    breakpoints: {
-      950: {
-        arrows: false,
-        pagination: true,
-      },
-    },
-  }).mount();
-});
 
 currentYear.textContent = new Date().getFullYear();
 

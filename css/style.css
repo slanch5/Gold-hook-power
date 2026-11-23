@@ -265,14 +265,6 @@ main {
   }
 }
 
-.about__inner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  column-gap: 20px;
-}
-
 .about__me__text {
   line-height: 25px;
   font-weight: 600;
@@ -284,11 +276,6 @@ main {
   &:hover {
     color: #d4af37;
   }
-}
-
-.about__me__image {
-  object-fit: cover;
-  border: 3px solid #d4af37;
 }
 
 .experience {
@@ -390,8 +377,9 @@ main {
 
 .experience__box__subtitle {
   text-align: center;
+  text-transform: uppercase;
 
-  font-size: clamp(24px, 3vw, 30px);
+  font-size: clamp(1.125rem, 3vw, 1.5rem);
   transition: all 0.5s ease-in-out;
   margin-bottom: 0.625rem;
   &:hover {
@@ -463,10 +451,6 @@ main {
   color: rgb(229, 193, 118);
 }
 
-.tabs__btn.is-active::after {
-  transform: scaleX(1);
-}
-
 .tabs__panel {
   animation: fadeIn 0.4s ease;
   overflow: hidden;
@@ -490,6 +474,12 @@ main {
 
 details summary + p {
   margin-top: 0.625rem;
+  font-weight: 400;
+  font-size: clamp(18px, 3vw, 20px);
+  transition: color 0.5s ease-in-out;
+  &:hover {
+    color: #d4af37;
+  }
 }
 
 .tabs__panel details {
@@ -503,8 +493,8 @@ summary {
   gap: 0.5rem;
   font-size: 1.25rem;
   cursor: pointer;
-  transition: all 4s ease-in-out;
-  &:hover{
+  transition: color 0.5s ease-in;
+  &:hover {
     height: auto;
   }
 }
@@ -532,13 +522,13 @@ details[open] summary::before {
   content: "−";
 }
 
-details::details-content{
+details::details-content {
   block-size: 0;
   transition: block-size 1s;
 }
 
-details[open]::details-content{
-block-size: auto;
+details[open]::details-content {
+  block-size: auto;
 }
 
 /* hover тільки для миші, щоб не залипав на телефоні */
@@ -956,74 +946,4 @@ block-size: auto;
   &:hover {
     color: #d4af37;
   }
-}
-.about__inner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-}
-
-.about__slider {
-  width: 100%;
-}
-
-/* Кожен слайд: фото зліва, текст справа */
-.about__slider .splide__slide {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  padding: 0 3.75rem; /* місце під стрілки, щоб не налазили на текст */
-}
-
-.about__arrow {
-  padding: 0.5rem;
-  background: none;
-  border: none;
-  border-radius: 0;
-  opacity: 1;
-  color: #fff;
-  transition:
-    color 0.3s,
-    transform 0.3s;
-}
-
-.about__arrow .about__arrow__icon {
-  width: 30px;
-  height: 30px;
-  flex-shrink: 0;
-  fill: none;
-  stroke-width: 2.5;
-}
-
-/* Наведення: змінюється колір */
-.about__arrow:hover:not(:disabled) {
-  color: #d4a64a;
-  opacity: 1;
-}
-
-/* Легкий зсув у бік руху */
-.about__arrow.splide__arrow--next:hover {
-  transform: translateY(-50%) translateX(4px);
-}
-.about__arrow.splide__arrow--prev:hover {
-  transform: translateY(-50%) translateX(-4px);
-}
-
-.about__arrow:focus-visible {
-  outline: 2px solid #d4a64a;
-  outline-offset: 4px;
-}
-
-.splide__pagination {
-  bottom: -2.5em;
-}
-
-.splide__pagination__page.is-active {
-  background: #d4af37;
-}
-
-.splide__pagination__page {
-  background: #f5d576;
-  margin: 5px;
 }
