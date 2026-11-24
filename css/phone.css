@@ -1,6 +1,14 @@
 @media (max-width: 1050px) {
   .burger {
     display: flex;
+    position: relative;
+    z-index: 1001;
+  }
+
+  .burger.is-active {
+    position: fixed;
+    top: 30px;
+    right: 30px; /* як padding у .nav */
   }
 
   .nav {
@@ -25,6 +33,12 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+  }
+
+  .social__list--nav {
+    display: flex;
+    border-top: 2px solid #fff;
+    padding-top: 20px;
   }
 
   .nav.is-open {
